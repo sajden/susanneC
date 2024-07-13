@@ -6,6 +6,8 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import ServiceBlock from "../../components/ServiceBlock";
+import ServiceData from "../../content/ServiceBlock.json"; // Correctly import the JSON data
+
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -40,10 +42,9 @@ const Home = () => {
         id="about"
       />
       <ServiceBlock
-        services={ServiceBlock.services}
-        title={ServiceBlock.title}
+        services={ServiceData.services}  // Use data from the JSON file
+        title={ServiceData.title}        // Use data from the JSON file
       />
-
       <ContentBlock
         direction="left"
         title={ProductContent.title}

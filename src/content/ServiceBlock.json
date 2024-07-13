@@ -1,17 +1,17 @@
 {
-    "title": "Our Services",
+    "title": "Mina tjänster",
     "services": [
         {
-            "title": "Service 1",
-            "description": "Details about Service 1. This service provides..."
+            "title": "Personalutveckling",
+            "description": "Lås upp ditt teams fulla potential med våra skräddarsydda personalutvecklingsprogram. Vi fokuserar på att bygga relationer, tillit och engagemang för att stärka individer att agera självsäkert. Vår metod kombinerar omfattande erfarenhet inom HR och ledarskap för att skapa en miljö där människor trivs och bidrar till företagets framgång."
         },
         {
-            "title": "Service 2",
-            "description": "Details about Service 2. An excellent choice for..."
+            "title": "HR-processer",
+            "description": "Optimera din HR-avdelning med våra omfattande HR-processer. Med över 30 års erfarenhet inom olika branscher erbjuder vi strategier för en modern och effektiv HR-hantering. Från digitalisering och strategisk arbetskraftsplanering till förändringsledning och ledarskapsutveckling, vi förser ditt HR-team med de verktyg som behövs för att excellera."
         },
         {
-            "title": "Service 3",
-            "description": "Details about Service 3. Known for its reliability and..."
+            "title": "Organisationsförändring",
+            "description": "Navigera genom organisationsförändringar smidigt med vår expertvägledning. Vi specialiserar oss på förändringsledning, fusioner och förvärv samt organisationsutveckling. Vår beprövade erfarenhet av att hantera komplexa transformationer säkerställer att ditt företag anpassar sig effektivt och smärtfritt i dagens snabbrörliga affärsmiljö."
         }
     ]
 }
