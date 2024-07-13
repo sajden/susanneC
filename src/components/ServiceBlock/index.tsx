@@ -86,16 +86,16 @@ const ExpandedServiceContent: React.FC<{ service: any }> = ({ service }) => {
                     HR-processer är avgörande för att säkerställa att en organisation fungerar smidigt och effektivt. Vårt team av experter hjälper till att optimera HR-processer genom att implementera strategier för digitalisering och arbetskraftsplanering. Genom att fokusera på förändringsledning och ledarskapsutveckling, stödjer vi ditt HR-team för att uppnå sina mål.
                 </p>
                 <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
-                    <div>
-                        <img src="path-to-image1.jpg" alt="HR-processer image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                <div>
+                        <img src="/img/svg/pu1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 1 description</p>
                     </div>
                     <div>
-                        <img src="path-to-image2.jpg" alt="HR-processer image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        <img src="/img/svg/pu2.jpg" alt="Personalutveckling image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 2 description</p>
                     </div>
                     <div>
-                        <img src="path-to-image3.jpg" alt="HR-processer image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        <img src="/img/svg/pu3.jpg" alt="Personalutveckling image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 3 description</p>
                     </div>
                 </Carousel>
@@ -109,16 +109,16 @@ const ExpandedServiceContent: React.FC<{ service: any }> = ({ service }) => {
                     Organisationsförändring är en komplex process som kräver noggrann planering och genomförande. Vi specialiserar oss på att hjälpa företag navigera genom förändringar, inklusive fusioner och förvärv, samt organisationsutveckling. Genom vår expertvägledning kan vi säkerställa att ditt företag anpassar sig effektivt till förändringar och bibehåller sin konkurrenskraft.
                 </p>
                 <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
-                    <div>
-                        <img src="path-to-image1.jpg" alt="Organisationsförändring image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                <div>
+                        <img src="/img/svg/pu1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 1 description</p>
                     </div>
                     <div>
-                        <img src="path-to-image2.jpg" alt="Organisationsförändring image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        <img src="/img/svg/pu2.jpg" alt="Personalutveckling image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 2 description</p>
                     </div>
                     <div>
-                        <img src="path-to-image3.jpg" alt="Organisationsförändring image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        <img src="/img/svg/pu3.jpg" alt="Personalutveckling image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 3 description</p>
                     </div>
                 </Carousel>

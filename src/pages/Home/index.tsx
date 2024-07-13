@@ -6,8 +6,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import ServiceBlock from "../../components/ServiceBlock";
-import ServiceData from "../../content/ServiceBlock.json"; // Correctly import the JSON data
-
+import ServiceData from "../../content/ServiceBlock.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -56,10 +55,10 @@ const Home = () => {
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
+        section={MissionContent.missions}  // Use the missions array
         icon="product-launch.svg"
         id="mission"
       />
-
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}

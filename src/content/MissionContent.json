@@ -1,4 +1,21 @@
 {
-  "title": "Ready made sections",
-  "text": "Landy comes with a set of ready to use sections to help you easily create a landing page for your own brand, with all the content your startup desires. In order to replace any dummy elements (text, image, etc..) all you need to do is go to content folder and input your real content."
+  "title": "Tidigare uppdrag",
+  "text": "Here are some of the missions we have successfully completed.",
+  "missions": [
+    {
+      "title": "Digital Transformation at TechCorp",
+      "content": "Uppdraget vid TechCorp innebar en fullständig digitalisering av företagets HR-processer. Målet var att ersätta manuella, pappersbaserade system med moderna, integrerade digitala lösningar. Efter en grundlig analys av företagets behov, implementerade vi ett avancerat HR-system som inkluderade rekrytering, prestationshantering, och löneadministration. Genom att hålla workshops och utbildningssessioner för hela HR-teamet, säkerställde vi en smidig övergång och maximal användning av de nya verktygen. Resultatet blev en ökad effektivitet, minskade felmarginaler och en betydligt förbättrad medarbetarupplevelse.",
+      "icon": "/img/svg/mc1.webp"
+    },
+    {
+      "title": "Leadership Development at GlobalFin",
+      "content": "På GlobalFin fick jag uppdraget att stärka ledarskapet inom organisationen. Genom att designa och genomföra ett skräddarsytt ledarskapsprogram, fokuserade vi på att utveckla nyckelkompetenser hos mellanchefer och seniora ledare. Programmet inkluderade coaching, mentorskap och intensiva ledarskapsworkshops som täckte ämnen som förändringsledning, konflikthantering och strategisk planering. Efter sex månader visade våra utvärderingar en märkbar förbättring i ledarnas förmåga att hantera komplexa utmaningar och inspirera sina team, vilket ledde till ökad produktivitet och medarbetarnöjdhet.",
+      "icon": "/img/svg/mc2.webp"
+    },
+    {
+      "title": "Change Management at Nordisk Bygg",
+      "content": "När Nordisk Bygg stod inför en omfattande organisationsförändring, anlitade de mig för att leda förändringsprojektet. Uppdraget omfattade att omstrukturera företaget efter en sammanslagning med ett annat byggföretag. Jag utvecklade en detaljerad förändringsplan som inkluderade kommunikationsstrategier, medarbetarengagemang och utbildningsinsatser för att hantera övergången. Genom att arbeta nära ledningsgruppen och hålla regelbundna informationsmöten med alla anställda, lyckades vi skapa en transparent och inkluderande förändringsprocess. Projektet avslutades framgångsrikt med en smidig integration av de två företagen och en stärkt företagskultur.",
+      "icon": "/img/svg/mc3.webp"
+    }
+  ]
 }
