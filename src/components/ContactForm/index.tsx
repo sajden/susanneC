@@ -32,8 +32,8 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               <Col span={24}>
                 <Input
                   type="text"
-                  name="name"
-                  placeholder="Your Name"
+                  name="namn"
+                  placeholder="Ditt namn"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -43,7 +43,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Din mail"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -51,15 +51,15 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <TextArea
-                  placeholder="Your Message"
+                  placeholder="Ditt meddelande"
                   value={values.message || ""}
-                  name="message"
+                  name="meddelande"
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />
               </Col>
               <ButtonContainer>
-                <Button name="submit">{t("Submit")}</Button>
+                <Button name="submit">{t("Skicka")}</Button>
               </ButtonContainer>
             </FormGroup>
           </Slide>

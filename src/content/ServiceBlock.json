@@ -1,0 +1,17 @@
+{
+    "title": "Our Services",
+    "services": [
+        {
+            "title": "Service 1",
+            "description": "Details about Service 1. This service provides..."
+        },
+        {
+            "title": "Service 2",
+            "description": "Details about Service 2. An excellent choice for..."
+        },
+        {
+            "title": "Service 3",
+            "description": "Details about Service 3. Known for its reliability and..."
+        }
+    ]
+}
