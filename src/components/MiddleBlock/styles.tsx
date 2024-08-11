@@ -18,8 +18,11 @@ export const Content = styled("p")`
 
 export const ContentWrapper = styled("div")`
   max-width: 570px;
+  padding-bottom: 1rem;  // Add padding bottom for all screen sizes
 
   @media only screen and (max-width: 768px) {
     max-width: 100%;
+    padding-bottom: 2rem;  // Increase padding bottom on smaller screens
   }
 `;
+

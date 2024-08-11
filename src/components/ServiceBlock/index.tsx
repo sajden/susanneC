@@ -4,7 +4,7 @@ import { ServiceRow, ServiceWrapper, Title, Description, ExpandedContent, Expand
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Requires CSS loader
 
-const ServiceBlock: React.FC<ServiceBlockProps> = ({ services, title }) => {
+const ServiceBlock: React.FC<ServiceBlockProps> = ({ services, title, id }) => {
     const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
     const [isMobile, setIsMobile] = useState<boolean>(false);
 
@@ -24,7 +24,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ services, title }) => {
     };
 
     return (
-        <div>
+        <div id={id}>
             {title && <Title>{title}</Title>}
             <ServiceRow gutter={[16, 16]}>
                 {services.map((service, index) => (
@@ -32,6 +32,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ services, title }) => {
                         <ServiceWrapper onClick={() => handleToggle(index)}>
                             <Title>{service.title}</Title>
                             <Description>{service.description}</Description>
+                            <Description style={{ textAlign: 'right', fontWeight: 'bold', fontSize: 14, marginBottom: 0 }}>Läs mer</Description> {/* Styling "Läs mer" */}
                         </ServiceWrapper>
                         {isMobile && expandedIndex === index && (
                             <ExpandedSection>

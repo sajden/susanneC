@@ -35,9 +35,11 @@ const ContentBlock = ({
 }: ContentBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
 
   const isMissionSection = id === "mission";
@@ -58,7 +60,67 @@ const ContentBlock = ({
           )}
           {isMissionSection ? (
             <CarouselWrapper>
-              <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+              <Carousel
+                showThumbs={false}
+                autoPlay={true}
+                infiniteLoop={true}
+                renderArrowPrev={(clickHandler, hasPrev, label) =>
+                  hasPrev && (
+                    <button
+                      type="button"
+                      onClick={clickHandler}
+                      title={label}
+                      style={{
+                        position: "absolute",
+                        zIndex: 2,
+                        bottom: "0",
+                        width: "60px",
+                        height: "10%", // Cover full height
+                        cursor: "pointer",
+                        left: "0%", // Stick to the left side
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        opacity: "0.5", // Initial opacity for fading
+                        transition: "opacity 0.3s ease", // Smooth transition for hover
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.opacity = "1"}
+                      onMouseLeave={(e) => e.currentTarget.style.opacity = "0.5"}
+                    >
+                      <span style={{ color: "black", fontSize: "60px", transform: "rotate(0deg)", fontWeight: "bold" }}>
+                        &#x2039;
+                      </span>
+                    </button>
+                )}
+                renderArrowNext={(clickHandler, hasNext, label) =>
+                  hasNext && (
+                    <button
+                      type="button"
+                      onClick={clickHandler}
+                      title={label}
+                      style={{
+                        position: "absolute",
+                        zIndex: 2,
+                        bottom: "0%",
+                        width: "60px",
+                        height: "10%", // Cover full height
+                        cursor: "pointer",
+                        right: "0%", // Stick to the right side
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        opacity: "0.5", // Initial opacity for fading
+                        transition: "opacity 0.3s ease", // Smooth transition for hover
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.opacity = "1"}
+                      onMouseLeave={(e) => e.currentTarget.style.opacity = "0.5"}
+                    >
+                      <span style={{ color: "black", fontSize: "60px", transform: "rotate(-0deg)", fontWeight: "bold" }}>
+                        &#x203A;
+                      </span>
+                    </button>
+                )}
+              >
                 {section?.map((item, idx) => (
                   <div key={idx}>
                     <Row>
@@ -78,62 +140,60 @@ const ContentBlock = ({
             </CarouselWrapper>
           ) : (
             <>
-              <Col lg={11} md={11} sm={12} xs={24}>
-                <SvgIcon src={icon} width="100%" height="100%" />
-              </Col>
+              {direction === "left" && (
+                <Col lg={11} md={11} sm={12} xs={24}>
+                  <SvgIcon src={icon} width="100%" height="100%" />
+                </Col>
+              )}
               <Col lg={11} md={11} sm={11} xs={24}>
                 <ContentWrapper isMissionSection={isMissionSection}>
                   <h6>{t(title)}</h6>
                   <Content>{t(content)}</Content>
-                  {direction === "right" ? (
+                  {direction === "right" && (
                     <ButtonWrapper>
-                      {typeof button === "object" &&
-                        button.map(
-                          (
-                            item: {
-                              color?: string;
-                              title: string;
-                            },
-                            id: number
-                          ) => {
-                            return (
-                              <Button
-                                key={id}
-                                color={item.color}
-                                onClick={() => scrollTo("about")}
-                              >
-                                {t(item.title)}
-                              </Button>
-                            );
-                          }
-                        )}
+                      {button && button.length > 0 && (
+                        <>
+                          <Button
+                            color={button[0].color}
+                            onClick={() => scrollTo("service")}
+                          >
+                            {t(button[0].title)}
+                          </Button>
+                          {button.length > 1 && (
+                            <Button
+                              color={button[1].color}
+                              onClick={() => scrollTo("mission")}
+                            >
+                              {t(button[1].title)}
+                            </Button>
+                          )}
+                        </>
+                      )}
                     </ButtonWrapper>
-                  ) : (
+                  )}
+                  {direction === "left" && (
                     <ServiceWrapper>
                       <Row justify="space-between">
-                        {typeof section === "object" &&
-                          section.map(
-                            (
-                              item: {
-                                title: string;
-                                content: string;
-                                icon: string;
-                              },
-                              id: number
-                            ) => {
-                              return (
-                                <Col key={id} span={11}>
-                                  <SvgIcon
-                                    src={item.icon}
-                                    width="60px"
-                                    height="60px"
-                                  />
-                                  <MinTitle>{t(item.title)}</MinTitle>
-                                  <MinPara>{t(item.content)}</MinPara>
-                                </Col>
-                              );
-                            }
-                          )}
+                        {section?.map(
+                          (
+                            item: {
+                              title: string;
+                              content: string;
+                              icon: string;
+                            },
+                            id: number
+                          ) => (
+                            <Col key={id} span={11}>
+                              <SvgIcon
+                                src={item.icon}
+                                width="60px"
+                                height="60px"
+                              />
+                              <MinTitle>{t(item.title)}</MinTitle>
+                              <MinPara>{t(item.content)}</MinPara>
+                            </Col>
+                          )
+                        )}
                       </Row>
                     </ServiceWrapper>
                   )}

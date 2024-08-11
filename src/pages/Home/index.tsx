@@ -43,14 +43,9 @@ const Home = () => {
       <ServiceBlock
         services={ServiceData.services}  // Use data from the JSON file
         title={ServiceData.title}        // Use data from the JSON file
+        id="service"
       />
-      <ContentBlock
-        direction="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
-        icon="waving.svg"
-        id="product"
-      />
+      
       <ContentBlock
         direction="right"
         title={MissionContent.title}

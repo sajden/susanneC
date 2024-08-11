@@ -32,7 +32,7 @@ const MiddleBlock = ({ title, description, text, button, t }: MiddleBlockProps) 
               <Content><em>{t(description)}</em></Content>
               <Content>{t(text)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
+                <Button name="submit" onClick={() => scrollTo("contact")}>
                   {t(button)}
                 </Button>
               )}
