@@ -26,6 +26,10 @@ export const ContentWrapper = styled("div")<{ isMissionSection: boolean }>`
   position: relative;
   max-width: 540px;
 
+  @media only screen and (max-width: 1024px) and (min-width: 576px) {
+    padding-bottom: 20px; /* Add some padding at the bottom on medium screens */
+  }
+
   @media only screen and (max-width: 575px) {
     padding-top: 4rem;
   }
@@ -38,6 +42,7 @@ export const ContentWrapper = styled("div")<{ isMissionSection: boolean }>`
     }
   `}
 `;
+
 
 export const ServiceWrapper = styled("div")`
   display: flex;

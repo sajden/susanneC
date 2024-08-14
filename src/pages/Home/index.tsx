@@ -23,7 +23,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="LSimg1.png"
         id="intro"
       />
       <MiddleBlock
@@ -37,7 +37,7 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="LSteamwork3.png"
         id="about"
       />
       <ServiceBlock

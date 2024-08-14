@@ -39,7 +39,7 @@ const MiddleBlock = ({ title, description, text, button, t }: MiddleBlockProps) 
             </ContentWrapper>
           </Col>
           <Col lg={12} md={12} sm={24} xs={24}>
-            <SvgIcon src="susanne.svg" width="100%" height="auto" />
+            <SvgIcon src="mamma4.png" width="100%" height="auto" />
           </Col>
         </Row>
       </Slide>
