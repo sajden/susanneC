@@ -56,14 +56,18 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({ services, title, id }) => {
 };
 
 const ExpandedServiceContent: React.FC<{ service: any }> = ({ service }) => {
-    if (service.title === "Personalutveckling") {
+    if (service.title === "HR Interim") {
         return (
             <>
                 <h3>Varför {service.title}?</h3>
                 <p>
-                    Personalutveckling är viktigt eftersom det hjälper individer att maximera sin potential och effektivitet. Genom skräddarsydda utvecklingsprogram kan vi bygga starka team som arbetar bra tillsammans. Gestaltmetoden spelar en viktig roll i personalutveckling genom att främja självmedvetenhet och autentiska relationer inom teamet. Detta leder till bättre kommunikation, ökat förtroende och en mer produktiv arbetsmiljö.
+                Som HR-expert har jag stor erfarenhet av både mindre och större företag från flera 
+olika branscher ex Försäkring, Finans, Bygg och Teknikkonsult. Min styrka ligger i att
+jag snabbt ser vad som behöver göras strategiskt och även omsätta det operativt.
+Min drivkraft är att se människor och företag utvecklas, med mig får du ett stort
+engagmang för uppgiften och en positiv inställning till allt jag tar mig för.
                 </p>
-                <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+                {/* <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                     <div>
                         <img src="/img/svg/pu1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 1 description</p>
@@ -76,17 +80,22 @@ const ExpandedServiceContent: React.FC<{ service: any }> = ({ service }) => {
                         <img src="/img/svg/pu3.jpg" alt="Personalutveckling image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 3 description</p>
                     </div>
-                </Carousel>
+                </Carousel> */}
             </>
         );
-    } else if (service.title === "HR-processer") {
+    } else if (service.title === "Utveckling & Lärande") {
         return (
             <>
                 <h3>Varför {service.title}?</h3>
                 <p>
-                    HR-processer är avgörande för att säkerställa att en organisation fungerar smidigt och effektivt. Vårt team av experter hjälper till att optimera HR-processer genom att implementera strategier för digitalisering och arbetskraftsplanering. Genom att fokusera på förändringsledning och ledarskapsutveckling, stödjer vi ditt HR-team för att uppnå sina mål.
+                Våra utvecklingsinsatser skräddarsyr vi tillsammans med våra kunder och är
+utformade utifrån att förbättra samarbetet, öka engagemanget och främja en
+lärandekultur. Vår kunskap och erfarenhet av lärande visar på att man behöver träna
+förmågor inom bland annat relationsbyggande, självledarskap och driva förändring
+för att skapa långsiktiga och hållbara resultat. Vi erbjuder utveckling på både grupp
+och individnivå.
                 </p>
-                <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+                {/* <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                 <div>
                         <img src="/img/svg/pu1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 1 description</p>
@@ -99,17 +108,21 @@ const ExpandedServiceContent: React.FC<{ service: any }> = ({ service }) => {
                         <img src="/img/svg/pu3.jpg" alt="Personalutveckling image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 3 description</p>
                     </div>
-                </Carousel>
+                </Carousel> */}
             </>
         );
-    } else if (service.title === "Organisationsförändring") {
+    } else if (service.title === "HR-transformation") {
         return (
             <>
                 <h3>Varför {service.title}?</h3>
                 <p>
-                    Organisationsförändring är en komplex process som kräver noggrann planering och genomförande. Vi specialiserar oss på att hjälpa företag navigera genom förändringar, inklusive fusioner och förvärv, samt organisationsutveckling. Genom vår expertvägledning kan vi säkerställa att ditt företag anpassar sig effektivt till förändringar och bibehåller sin konkurrenskraft.
+                Vi inleder med en nulägesanalys/audit av HRs uppdrag där områden som HR-
+processer och arbetssätt, digitalisering och medarbetarupplevelsen är i fokus.
+Därefter gör vi tillsammans med kunden en strategisk utvecklingsplan med förslag på
+aktiviteter där det t ex kan ingå förstudie och upphandling av HR-system som är
+anpassade till företagets behov. Vi är gärna er transformationspartner.
                 </p>
-                <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+                {/* <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                 <div>
                         <img src="/img/svg/pu1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 1 description</p>
@@ -122,7 +135,7 @@ const ExpandedServiceContent: React.FC<{ service: any }> = ({ service }) => {
                         <img src="/img/svg/pu3.jpg" alt="Personalutveckling image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 3 description</p>
                     </div>
-                </Carousel>
+                </Carousel> */}
             </>
         );
     }

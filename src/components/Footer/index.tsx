@@ -81,9 +81,10 @@ const Footer = ({ t }: { t: TFunction }) => {
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a> */}
             </Col>
-            <a href="susanne.castwall@leadingskills.se">
-                <Chat>{t(`Kontakta mig`)}</Chat>
-              </a>
+            <a href="mailto:susanne.castwall@leadingskills.se">
+  <Chat>{t("Kontakta mig")}</Chat>
+</a>
+
             {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/">{t("Application Security")}</Large>

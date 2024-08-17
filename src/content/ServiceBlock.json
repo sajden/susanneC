@@ -2,16 +2,16 @@
     "title": "Mina tjänster",
     "services": [
         {
-            "title": "Personalutveckling",
-            "description": "Lås upp ditt teams fulla potential med våra skräddarsydda personalutvecklingsprogram. Vi fokuserar på att bygga relationer, tillit och engagemang för att stärka individer att agera självsäkert. Vår metod kombinerar omfattande erfarenhet inom HR och ledarskap för att skapa en miljö där människor trivs och bidrar till företagets framgång."
+            "title": "HR Interim",
+            "description": "När du står inför en rekrytering eller uppstart av en HR-funktion och behöver tillfällig förstärkning kan det vara avgörande att få in rätt kompetens under en period. Oavsett om du behöver täcka en vakans, leda ett strategiskt projekt eller hantera en förändringsprocess, ger jag dig möjligheten att få in den kunskap och erfarenhet du behöver."
         },
         {
-            "title": "HR-processer",
-            "description": "Optimera din HR-avdelning med våra omfattande HR-processer. Med över 30 års erfarenhet inom olika branscher erbjuder vi strategier för en modern och effektiv HR-hantering. Från digitalisering och strategisk arbetskraftsplanering till förändringsledning och ledarskapsutveckling, vi förser ditt HR-team med de verktyg som behövs för att excellera."
+            "title": "Utveckling & Lärande",
+            "description": "Varje organisation är unik och framgångsrika företag bygger på ledare som uppmuntras att själva utvecklas och stödja sina medarbetare och team i deras lärande. Oavsett om ni vill stärka ett specifikt team, utveckla ledarskapet på olika nivåer eller genomföra en kulturell förändring, kan vi hjälpa er att nå era mål."
         },
         {
-            "title": "Organisationsförändring",
-            "description": "Navigera genom organisationsförändringar smidigt med vår expertvägledning. Vi specialiserar oss på förändringsledning, fusioner och förvärv samt organisationsutveckling. Vår beprövade erfarenhet av att hantera komplexa transformationer säkerställer att ditt företag anpassar sig effektivt och smärtfritt i dagens snabbrörliga affärsmiljö."
+            "title": "HR-transformation",
+            "description": "När man effektiviserar HR-arbetet är det viktigt att balansera effektivitet med kvalitet och säkerställa att HR-funktionens arbete stödjer företagets mål och behov. Ett mer effektivt HR-arbete minskar inte bara kostnader och sparar tid, utan stärker också företagets förmåga att attrahera, utveckla och behålla talanger samt ökar företagets konkurrenskraft."
         }
     ]
 }

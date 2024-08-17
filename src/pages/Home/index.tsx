@@ -46,14 +46,14 @@ const Home = () => {
         id="service"
       />
       
-      <ContentBlock
+      {/* <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
         section={MissionContent.missions}  // Use the missions array
         icon="product-launch.svg"
         id="mission"
-      />
+      /> */}
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
