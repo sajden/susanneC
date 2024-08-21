@@ -156,13 +156,16 @@ const ContentBlock = ({
                           <Button
                             color={button[0].color}
                             onClick={() => scrollTo("service")}
+                            type="button"
+
                           >
                             {t(button[0].title)}
                           </Button>
                           {button.length > 1 && (
                             <Button
                               color={button[1].color}
-                              onClick={() => scrollTo("mission")}
+                              onClick={() => scrollTo("middleblock")}
+                              type="button"
                             >
                               {t(button[1].title)}
                             </Button>

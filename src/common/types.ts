@@ -7,10 +7,11 @@ export interface ContainerProps {
 export interface ButtonProps {
   color?: string;
   name?: string;
-  htmlType?: 'button' | 'submit' | 'reset';  // Add the htmlType prop here
+  type?: "button" | "submit" | "reset"; // Add this line
   children: React.ReactNode;
   onClick?: () => void;
 }
+
 
 
 export interface SvgIconProps {

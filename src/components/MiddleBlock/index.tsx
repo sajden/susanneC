@@ -11,10 +11,11 @@ interface MiddleBlockProps {
   description: string;
   text: string;
   button: string;
+  id?: string;  // Ensure id is optional
   t: TFunction;
 }
 
-const MiddleBlock = ({ title, description, text, button, t }: MiddleBlockProps) => {
+const MiddleBlock = ({ title, description, text, button, id, t }: MiddleBlockProps) => { // Destructure id here
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -23,7 +24,7 @@ const MiddleBlock = ({ title, description, text, button, t }: MiddleBlockProps) 
   };
 
   return (
-    <MiddleBlockSection>
+    <MiddleBlockSection id={id}>  {/* Apply the id to the section */}
       <Slide direction="up" triggerOnce>
         <Row justify="center" align="middle">
           <Col lg={12} md={12} sm={24} xs={24}>
@@ -32,10 +33,12 @@ const MiddleBlock = ({ title, description, text, button, t }: MiddleBlockProps) 
               <Content><em>{t(description)}</em></Content>
               <Content>{t(text)}</Content>
               {button && (
-                <Button name="submit" onClick={() => scrollTo("contact")}>
+                <a href="mailto:susanne.castwall@leadingskills.se" style={{ textDecoration: 'none' }}>
+                <Button name="emailButton">
                   {t(button)}
                 </Button>
-              )}
+              </a>
+            )}
             </ContentWrapper>
           </Col>
           <Col lg={12} md={12} sm={24} xs={24}>

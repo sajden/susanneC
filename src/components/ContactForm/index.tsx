@@ -73,7 +73,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
     <ValidationType type="message" />
   </Col>
   <ButtonContainer>
-    <Button name="submit" htmlType="submit">{t("Skicka")}</Button>
+    <Button name="submit" type="submit">{t("Skicka")}</Button>
   </ButtonContainer>
 </FormGroup>
 

@@ -59,7 +59,7 @@ const ExpandedServiceContent: React.FC<{ service: any }> = ({ service }) => {
     if (service.title === "HR Interim") {
         return (
             <>
-                <h3>Varför {service.title}?</h3>
+                <h3>Vem är jag?</h3>
                 <p>
                 Som HR-expert har jag stor erfarenhet av både mindre och större företag från flera 
 olika branscher ex Försäkring, Finans, Bygg och Teknikkonsult. Min styrka ligger i att
@@ -67,26 +67,26 @@ jag snabbt ser vad som behöver göras strategiskt och även omsätta det operat
 Min drivkraft är att se människor och företag utvecklas, med mig får du ett stort
 engagmang för uppgiften och en positiv inställning till allt jag tar mig för.
                 </p>
-                {/* <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+                <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                     <div>
-                        <img src="/img/svg/pu1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
-                        <p className="legend">Image 1 description</p>
+                        <img src="/img/svg/interim1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        {/* <p className="legend">Image 1 description</p> */}
                     </div>
                     <div>
-                        <img src="/img/svg/pu2.jpg" alt="Personalutveckling image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
-                        <p className="legend">Image 2 description</p>
+                        <img src="/img/svg/interim2.webp" alt="Personalutveckling image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        {/* <p className="legend">Image 2 description</p> */}
                     </div>
-                    <div>
+                    {/* <div>
                         <img src="/img/svg/pu3.jpg" alt="Personalutveckling image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 3 description</p>
-                    </div>
-                </Carousel> */}
+                    </div> */}
+                </Carousel>
             </>
         );
     } else if (service.title === "Utveckling & Lärande") {
         return (
             <>
-                <h3>Varför {service.title}?</h3>
+                <h3>Vad gör vi?</h3>
                 <p>
                 Våra utvecklingsinsatser skräddarsyr vi tillsammans med våra kunder och är
 utformade utifrån att förbättra samarbetet, öka engagemanget och främja en
@@ -95,26 +95,26 @@ förmågor inom bland annat relationsbyggande, självledarskap och driva förän
 för att skapa långsiktiga och hållbara resultat. Vi erbjuder utveckling på både grupp
 och individnivå.
                 </p>
-                {/* <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+                <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                 <div>
-                        <img src="/img/svg/pu1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
-                        <p className="legend">Image 1 description</p>
+                        <img src="/img/svg/utveckling1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        {/* <p className="legend">Image 1 description</p> */}
                     </div>
                     <div>
-                        <img src="/img/svg/pu2.jpg" alt="Personalutveckling image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
-                        <p className="legend">Image 2 description</p>
+                        <img src="/img/svg/utveckling2.jpg" alt="Personalutveckling image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        {/* <p className="legend">Image 2 description</p> */}
                     </div>
-                    <div>
+                    {/* <div>
                         <img src="/img/svg/pu3.jpg" alt="Personalutveckling image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 3 description</p>
-                    </div>
-                </Carousel> */}
+                    </div> */}
+                </Carousel>
             </>
         );
     } else if (service.title === "HR-transformation") {
         return (
             <>
-                <h3>Varför {service.title}?</h3>
+                <h3>Hur gör vi?</h3>
                 <p>
                 Vi inleder med en nulägesanalys/audit av HRs uppdrag där områden som HR-
 processer och arbetssätt, digitalisering och medarbetarupplevelsen är i fokus.
@@ -122,20 +122,20 @@ Därefter gör vi tillsammans med kunden en strategisk utvecklingsplan med förs
 aktiviteter där det t ex kan ingå förstudie och upphandling av HR-system som är
 anpassade till företagets behov. Vi är gärna er transformationspartner.
                 </p>
-                {/* <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
+                <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                 <div>
-                        <img src="/img/svg/pu1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
-                        <p className="legend">Image 1 description</p>
+                        <img src="/img/svg/hr1.jpg" alt="Personalutveckling image 1" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        {/* <p className="legend">Image 1 description</p> */}
                     </div>
                     <div>
-                        <img src="/img/svg/pu2.jpg" alt="Personalutveckling image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
-                        <p className="legend">Image 2 description</p>
+                        <img src="/img/svg/hr2.webp" alt="Personalutveckling image 2" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+                        {/* <p className="legend">Image 2 description</p> */}
                     </div>
-                    <div>
+                    {/* <div>
                         <img src="/img/svg/pu3.jpg" alt="Personalutveckling image 3" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
                         <p className="legend">Image 3 description</p>
-                    </div>
-                </Carousel> */}
+                    </div> */}
+                </Carousel>
             </>
         );
     }
